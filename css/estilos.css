@@ -1,7 +1,6 @@
 body{
 font-family: 'Open Sans', sans-serif;
 color: #9E5639;
-background-color: #F4EF32;
 line-height: 1em;
 padding: 0;
 }
@@ -11,6 +10,8 @@ header{
 main{
 	display: grid;
 	grid-template-columns: auto;
+	background-color: #F4EF32;
+
 }
 h1{ 
 	margin:0;
@@ -22,33 +23,47 @@ h1{
 	line-height: 1.7;
 }
 .section1{
-	width: 100%;
+	line-height: 1.7em;
+	font-size: 2em;
+	background-image:url(../img/fundo.jpg);
+	width:100%;
+	padding: 0;
 	margin: 0 0;
-	position: relative;
+	height:auto;
+	
 }
-.section1 img{
-	width: 100%;
+.section1 {
+	padding: 0;
 	margin: 0;
-	z-index: 1;
 }
-.section1 p{
-	text-align: center;
-	line-height: 125px;
-	font-size: 55px;
-	position: absolute;
-	bottom: 50px;
-	color: #2D1814;
+.section1  img{
+float: left;
+width: 250px;
+height: auto;
+margin: 20px 35px 20px 20px;
+box-shadow: 15px 15px 25px black 
 }
-.degradee{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 90px; 
-	z-index: 5;
-	background-image: linear-gradient(to top, #F4EF32, transparent)
+.input {
+	margin-top:100px;
+	color: #FFFFE8;
+	font-family: consolas;
+	line-height: 0.7em;
+	font-size: 2em;
 }
+.green{
+	color: #A6E22B;
+}
+.blue{
+	color: #56D8C1;
+}
+.purple{
+	color: #7B76CE;
+}
+.red{
+	color: #E32639;
+}
+
 .section2{
-	width: 100%;
 	line-height: 1.7em;
 	font-size: 2em;
 }
@@ -60,5 +75,25 @@ h1{
 .section4{
 	width: 100%;
 	line-height: 1.7em;
-	font-size: 2em;
+	font-size: 2em; 
+}
+.ponto{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	border: solid 3px #9E5639;
+}
+.atribuido{
+	background-color: #9E5639;
+}
+table{
+width: 100%;
+margin: auto;
+  border-collapse: separate; 
+  border-spacing: 50px 20px;
+  margin: 0 0 0 0;
+}
+th{
+text-align: center;	
 }
