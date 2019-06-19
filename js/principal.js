@@ -1,50 +1,49 @@
-/*document.getElementsByClassName('aiai');
-var c = document.getElementsByClassName('aiai');
-var i =3;
-function printar (element) {
-	letra=element[0].innerText.split('');
-	
-	console.log(letra);
-	for (i=0; i<letra.length;i++){
-			console.log(letra[i]);
-    		x.innerText+=letra;
-    		setInterval(function(){console.log("oi");},1000);
-}
-}
-printar(c);
-*/
-$(function(){
-	$('p').hide();
-});
-var c = document.getElementsByClassName('aiai');
-var i =0;
-var letra=c[0].innerText.split('');
-/*for (var i = 0; i <letra.length; i++) {
-	
-	console.log(letra[i]);*/
-	
-	function writer(){
-		setTimeout(function(){
-			console.log(letra[8]);
-		},1000*i);
-		i++
-	}
-for (var i = 0; i <letra.length; i++) {
-	
-	writer();
-	console.log(letra[i]);
-	/*console.log(letra[i])
+//Função para a criação de topicos de atribuição meus conhecimentos.
+function criarAtibuto( nomeAtributo, pontos, background) {  
+    var atributo = document.getElementById('grid-container');
+    var pontoAtribuido = '';
+    for (var i = 0; i < pontos; i++) {
+        pontoAtribuido += '<span class="ponto atribuido"> </span>';
+    };
+    var ponto = '';
+    for (var j = 0; j < (10 - pontos); j++) {
+        ponto += '<span class="ponto"> </span>';
+    };
+   
+        if(background == ''){
+            atributo.innerHTML +=
+        '<div class="grid-iten-4"> <h3>' + nomeAtributo + '</h3>' + 
+        '<div>'  + pontoAtribuido + ponto + '</div>  </div>';
+        }else{
+            atributo.innerHTML +=
+        '<div class="grid-iten-4" "><img src="'+background+'"> <h3>' + nomeAtributo + '</h3>' + 
+        '<div>'  + pontoAtribuido + ponto + '</div>  </div>';
+        }
+    };
+// chamada de função para criacão de atributos em programação.
+criarAtibuto( 'HTML', 8,'');
+criarAtibuto( 'CSS', 7,'');
+criarAtibuto( 'JavaScript', 5,'');
+criarAtibuto( 'Git/GitHub', 7,'');
+criarAtibuto( 'Java', 4,'');
+criarAtibuto( 'MySQL', 4,'');
+criarAtibuto( 'Leitura', 7,'img/bandeira-inglaterra.jpg');
+criarAtibuto( 'Escrita', 7,'img/bandeira-inglaterra.jpg');
+criarAtibuto('Conversação', 4,'img/bandeira-inglaterra.jpg');
 
-	while(i<letra.length){
-			writer();
-			i++;*/
-	}
-	;
+//---------------------------------------------------------------------------------------------
+//Função para a criação de topicos de atribuição criados por mim.
+function criarAtibuto1( nomeAtributo) {  
+    var atributo = document.getElementById('grid-container-1');  
+        atributo.innerHTML +='<div class="grid-iten-4"> <h3>' + nomeAtributo + '</h3></div>';
+        
+           
+        
+    };
+criarAtibuto1('Jogo da Forca');
+criarAtibuto1('Pedra Papel Tesoura');
+criarAtibuto1('Jogo da Velha');
 
 
 
-/*$(function(){
-	$('p').hide().each(letra, function(index, value) {
-  			console.log(letra[index]);
-  		}});*/
 
