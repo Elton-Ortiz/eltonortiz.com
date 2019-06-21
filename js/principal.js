@@ -20,7 +20,22 @@ function criarAtibuto( nomeAtributo, pontos, background) {
         '<div>'  + pontoAtribuido + ponto + '</div>  </div>';
         }
     };
-// chamada de função para criacão de atributos em programação.
+//---------------------------------------------------------------------------------------------
+//função para criação de um titulo.
+function criarTitulo( titulo) {  
+    var atributo = document.getElementById('grid-container');  
+        atributo.innerHTML +='<div class="grid-iten-3"><h2>' + titulo + '</h2></div>';
+         };
+//-----------------------------------------------------------------------------------------------
+//Função para a criação de topicos de atribuição criados por mim.
+function criarAtibuto1( nomeAtributo) {  
+    var atributo = document.getElementById('grid-container');  
+        atributo.innerHTML +='<div class="grid-iten-4"> <h3>' + nomeAtributo + '</h3></div>';
+};
+//-------------------------------------------------------------------------------------------------------
+// chamada de função para criacão da seção Meus Conhecimentos
+criarTitulo('Meus Conhecimentos');
+
 criarAtibuto( 'HTML', 8,'');
 criarAtibuto( 'CSS', 7,'');
 criarAtibuto( 'JavaScript', 5,'');
@@ -30,20 +45,10 @@ criarAtibuto( 'MySQL', 4,'');
 criarAtibuto( 'Leitura', 7,'img/bandeira-inglaterra.jpg');
 criarAtibuto( 'Escrita', 7,'img/bandeira-inglaterra.jpg');
 criarAtibuto('Conversação', 4,'img/bandeira-inglaterra.jpg');
+//-------------------------------------------------------------------------------------------------
+// chamada de função para criacão da seção Criados Por Mim
+criarTitulo('Criados Por Mim');
 
-//---------------------------------------------------------------------------------------------
-//Função para a criação de topicos de atribuição criados por mim.
-function criarAtibuto1( nomeAtributo) {  
-    var atributo = document.getElementById('grid-container-1');  
-        atributo.innerHTML +='<div class="grid-iten-4"> <h3>' + nomeAtributo + '</h3></div>';
-        
-           
-        
-    };
 criarAtibuto1('Jogo da Forca');
 criarAtibuto1('Pedra Papel Tesoura');
 criarAtibuto1('Jogo da Velha');
-
-
-
-
