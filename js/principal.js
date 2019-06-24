@@ -30,7 +30,7 @@ function criarTitulo( titulo) {
 //Função para a criação de topicos de atribuição criados por mim.
 function criarAtibuto1( nomeAtributo) {  
     var atributo = document.getElementById('grid-container');  
-        atributo.innerHTML +='<div class="grid-iten-4"> <h3>' + nomeAtributo + '</h3></div>';
+        atributo.innerHTML +='<div class="grid-iten-4" > <h3>' + nomeAtributo + '</h3></div>';
 };
 //-------------------------------------------------------------------------------------------------------
 // chamada de função para criacão da seção Meus Conhecimentos
@@ -42,9 +42,9 @@ criarAtibuto( 'JavaScript', 5,'');
 criarAtibuto( 'Git/GitHub', 7,'');
 criarAtibuto( 'Java', 4,'');
 criarAtibuto( 'MySQL', 4,'');
-criarAtibuto( 'Leitura', 7,'img/bandeira-inglaterra.jpg');
-criarAtibuto( 'Escrita', 7,'img/bandeira-inglaterra.jpg');
-criarAtibuto('Conversação', 4,'img/bandeira-inglaterra.jpg');
+criarAtibuto( 'Leitura', 7,'');
+criarAtibuto( 'Escrita', 7,'');
+criarAtibuto('Conversação', 4,'');
 //-------------------------------------------------------------------------------------------------
 // chamada de função para criacão da seção Criados Por Mim
 criarTitulo('Criados Por Mim');
@@ -52,3 +52,13 @@ criarTitulo('Criados Por Mim');
 criarAtibuto1('Jogo da Forca');
 criarAtibuto1('Pedra Papel Tesoura');
 criarAtibuto1('Jogo da Velha');
+
+//-----------------------------------------------------------------------------------------------------
+document.getElementById('hamburguer-icon').onclick = function(){
+   document.getElementById('menu-deslizante').style.visibility= 'visible';
+    };
+document.getElementById('fechar').onclick = function(){
+    document.getElementById('menu-deslizante').style.visibility= 'hidden';
+};
+    
+ 

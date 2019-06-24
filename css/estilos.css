@@ -1,7 +1,7 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	color: #9E5639;
-	background-image: linear-gradient(-45deg, #535353,#DCDCDC);
+	background-image: linear-gradient(-45deg, #535353,#aaa);
 	line-height: 1em;
 	padding: 0;
 	}
@@ -47,7 +47,7 @@ body{
 		width: 150px;
 		height: 245PX;
 		margin: 20px 35px 20px 20px;
-		box-shadow: 15px 15px 25px black 
+		box-shadow: 5px 5px 25px black 
 	}
 	
 	.grid-iten-3{
@@ -123,6 +123,12 @@ body{
 
 
 	@media screen and (max-width:221px){
+		#grid-container{
+			grid-gap: 0px;
+		}
+		header{
+			width: 100%;
+		}
 		.grid-iten-1 h1{
 			letter-spacing: 1px;
 			font-size:20px;
