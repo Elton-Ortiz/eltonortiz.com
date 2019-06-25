@@ -5,10 +5,15 @@
         background-color:#2A2D34;
         text-align: right;
         position: sticky;
-        top:-15px;
+        top:-5px;
         z-index:999;
     }
     li{
+        list-style: none;
+    }
+    li a{
+        color: #2A2D34;
+        text-align: center;
         list-style: none;
         text-transform: capitalize;
     }
@@ -20,19 +25,26 @@
         text-align: center;
     }
     h1{
-        width: 85%;
+        width: 77.5%;
         text-align: center;
         float: left;
         line-height: 70px;
-        margin: 0 auto;
+        margin: 0 auto 0 7.5%;
         text-transform: capitalize;
         font-size: 2em;
     }
-    h2{
+    h2,h3,h4{
     text-transform: capitalize;
     text-align: center;
     }
-    header a{
+    h4{ 
+        font-size:1.3em;
+        width: 50%;
+        margin:0 0  45px 25%;
+        text-decoration:underline #2A2D34;
+        
+    }
+    #hamburguer-icon{
         width: 5%;
         vertical-align: middle;
         padding: auto;
@@ -49,7 +61,7 @@
         background-color: #FEFEFE;
         text-align: left;
         visibility: hidden;
-        padding: 30px;
+        padding:  30px;
         position: absolute;
         right: 0;
         top: 0;
@@ -59,11 +71,12 @@
 
     figure{
         position: relative;
-        margin: 0 0 150px 0;
-    }
-    figure img{
+        margin: 0;
+        background-image: url(../img/webdesign1.jpg);
         width: 100%;
-        height: 100%;
+        height:400px;
+        background-position: center;
+        background-size: cover;
     }
     figure div{
         color: #FEFEFE;
@@ -75,13 +88,16 @@
         opacity: .6;
     }
     figure h2{
-        margin: 20% 0 0 0;
+        margin: 170px 0 0 0;
     }
     figure p{
         text-align: center;
     }
     figure p::first-letter{
         text-transform: uppercase;
+    }
+    main .container{
+        margin-top:150px;
     }
      .tab{
         color:#2A2D34;
@@ -97,23 +113,91 @@
     .nav-tabs {
         border-bottom: 1px solid #2A2D34;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     footer{
+        height: 70px;
         margin:150px 0 0 0;
+        color: #FEFEFE;
+        background-color:#2A2D34;
     }
- 
-   
+    footer h1{
+        line-height: auto;
+        width: 100%;
+        margin: 0;
+    }
+    footer nav ul li{
+        display: inline-block;
+    }
+    i{
+        color: #FEFEFE;
+    }
+
+
+    #conhecimentos, #quem-sou{
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: transparent;
+        visibility: hidden;
+    }
+   @media screen and (max-width:300px){
+    figure div h2{
+        font-size: 1.3em;
+    }
+    figure div p{
+        font-size:1em;
+    }
+   }
+   @media screen and (min-width:540px){
+    footer h1{
+        width: fit-content;
+        text-align: left;
+        margin-left: 7.5%;
+        float: left;
+    }
+    footer nav{
+        line-height: 70px;
+        vertical-align: text-bottom;
+    }
+    footer li{
+        vertical-align: top;
+    }
+   footer nav ul:first-child  {
+        text-align: right;
+        margin-right: 7.5%;
+    }
+   }
+   @media screen and (min-width:700px){
+       figure{
+           height: 500px;
+       }
+       #hamburguer-icon{
+     
+           visibility: hidden;
+       }
+       figure div h2{
+        font-size: 2.7em;
+    }
+    figure div p{
+        font-size:1.5em;
+    }
+       h1{
+           text-align: left;
+       }
+       #menu-deslizante{
+           padding: 0;
+           margin-right: 7.5%;
+       }
+        header nav ul li{
+        display: inline;
+        visibility: visible;
+        z-index: 999;
+        margin-right: 15px;
+       }
+       li a{
+        color: #FEFEFE;
+       }
+       #fechar{
+           display: none;
+       }
+   }
+    
