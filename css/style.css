@@ -114,17 +114,16 @@
         border-bottom: 1px solid #2A2D34;
     }
     footer{
-        height: 70px;
+        height:70px;
         margin:150px 0 0 0;
         color: #FEFEFE;
         background-color:#2A2D34;
     }
-    footer h1{
-        line-height: auto;
-        width: 100%;
-        margin: 0;
+    footer nav ul{
+        height: 70px;
     }
     footer nav ul li{
+        line-height: 70px;
         display: inline-block;
     }
     i{
@@ -148,6 +147,9 @@
     }
    }
    @media screen and (min-width:540px){
+   footer{
+    height:70px;
+   }
     footer h1{
         width: fit-content;
         text-align: left;
